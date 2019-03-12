@@ -1,0 +1,156 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:17:1-32:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a3fd0c094adc46352d67642a42572cc9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\318b636186212dade3b4b32a63a33efc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1bbe17b6f0754beb46a37dc65a0cea0d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\31d60ce30c478f3f7d71ce336d7d2886\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\06fcab83cd1b10e98d87e6457827fe1e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7a3b43e99934079a323b74c32e71431\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\67a632518986036f1633fcf699a67b6a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\22809155f11b32dbcc6a3e593dedb919\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f78c827060173c3a382c7c15f41cddf2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9d116c1eedfb4ad1de94f666cf2b6f6a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:4:5-38
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:11-69
+	tools:ignore
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:6:5-44
+	android:installLocation
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:5:5-35
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:8:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:9:5-74
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:9:22-71
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:10:22-68
+application
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:12:5-36:19
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:26:5-30:19
+	android:label
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:15:9-41
+	tools:ignore
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:17:9-35
+	android:icon
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:14:9-45
+	android:allowBackup
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:16:9-40
+activity#org.billthefarmer.tuner.MainActivity
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:18:9-22:20
+	android:label
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:19:13-64
+activity#org.billthefarmer.tuner.HelpActivity
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:9-72
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:19-70
+activity#org.billthefarmer.tuner.SplashScreen
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:24:9-32:20
+	android:theme
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:25:13-63
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:24:19-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:28:13-31:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:29:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:30:27-74
+activity#org.billthefarmer.tuner.SettingsActivity
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:9-35:20
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:19-74
+uses-sdk
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a3fd0c094adc46352d67642a42572cc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a3fd0c094adc46352d67642a42572cc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\318b636186212dade3b4b32a63a33efc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\318b636186212dade3b4b32a63a33efc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1bbe17b6f0754beb46a37dc65a0cea0d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\1bbe17b6f0754beb46a37dc65a0cea0d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\31d60ce30c478f3f7d71ce336d7d2886\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\31d60ce30c478f3f7d71ce336d7d2886\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\06fcab83cd1b10e98d87e6457827fe1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\06fcab83cd1b10e98d87e6457827fe1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7a3b43e99934079a323b74c32e71431\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\f7a3b43e99934079a323b74c32e71431\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\67a632518986036f1633fcf699a67b6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\67a632518986036f1633fcf699a67b6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\22809155f11b32dbcc6a3e593dedb919\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\22809155f11b32dbcc6a3e593dedb919\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f78c827060173c3a382c7c15f41cddf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f78c827060173c3a382c7c15f41cddf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9d116c1eedfb4ad1de94f666cf2b6f6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9d116c1eedfb4ad1de94f666cf2b6f6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:28:13-60

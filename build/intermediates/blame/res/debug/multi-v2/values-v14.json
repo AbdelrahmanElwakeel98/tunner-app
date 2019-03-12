@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\abdel\\Desktop\\tunner-master\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\abdel\\Desktop\\tunner-master\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "8,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "259,614",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "405,744"
+                    },
+                    "to": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,206",
+                        "endLines": "4,7",
+                        "endColumns": "12,12",
+                        "endOffsets": "201,336"
+                    }
+                }
+            ]
+        }
+    ]
+}

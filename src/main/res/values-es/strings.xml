@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Sound Tuner</string>
+  <string name="help">Ayuda</string>
+  <string name="settings">Ajustes</string>
+  <string name="built">Construido %s</string>
+  <string name="copyright">Copyright \u00A9 2014 <a href="https://github.com/billthefarmer">Bill Farmer</a>
+  </string>
+  <string name="translation">Traducción al español por <a href="https://github.com/susobaco">Suso Comesaña</a>
+  </string>
+  <string name="licence">Licence: GNU GPLv3</string>
+
+  <string name="error_buffer">
+    ¡Error de grabación de audio! No se puede encontrar una frecuencia
+    de muestreo de entrada funcional.
+  </string>
+  <string name="error_init">
+    ¡Grabador de audio no inicializado! Tal vez la fuente de entrada
+    seleccionada no está disponible, o no se pudo encontrar una
+    frecuencia de muestreo de entrada funcional.
+  </string>
+
+  <string name="filter_on">Encender el filtro de audio</string>
+  <string name="filter_off">Apagar el filtro de audio</string>
+
+  <string name="fund_on">Encender el filtro fundamental</string>
+  <string name="fund_off">Apagar el filtro fundamental</string>
+
+  <string name="zoom_on">Encender la ampliación de espectro</string>
+  <string name="zoom_off">Apagar la ampliación de espectro</string>
+
+  <string name="lock_on">Encender el bloqueo de pantalla</string>
+  <string name="lock_off">Apagar el bloqueo de pantalla</string>
+
+  <string name="screen_on">Mantener la pantalla encendida</string>
+  <string name="screen_off">No mantener la pantalla encendida</string>
+
+  <string name="strobe_on">Encender el estroboscopio</string>
+  <string name="strobe_off">Apagar el estroboscopio</string>
+
+  <string name="downsample_on">Activar la descarga de una muestra</string>
+  <string name="downsample_off">Desactivar la descarga de una muestra</string>
+
+  <string name="multiple_on">Activar múltiples notas</string>
+  <string name="multiple_off">Desactivar múltiple notas</string>
+
+  <string name="dark_theme">Tema oscuro</string>
+  <string name="light_theme">Tema de luz</string>
+
+  <string name="copied_clip">Datos copiados en el portapapeles</string>
+  <string name="sample_rate">Frecuencia de muestreo: %d</string>
+
+  <string name="filter">filtro</string>
+  <string name="fund">fund</string>
+  <string name="note">nota</string>
+  <string name="zoom">zoom</string>
+  <string name="lock">bloqueo</string>
+  <string name="display">monitor</string>
+  <string name="strobe">strobo</string>
+  <string name="down">rebajado</string>
+  <string name="mult">múlt</string>
+
+  <string name="def_custom">[-1073807360,-1090518785]</string>
+
+  <string name="pref_input_category">Entrada</string>
+
+  <string name="pref_input">Fuente de entrada</string>
+  <string name="pref_input_summ">%s</string>
+
+  <string name="pref_filter">Filtro de audio</string>
+  <string name="pref_filter_summ">Filtro de la entrada de audio</string>
+
+  <string name="pref_downsample">Grabación de muestra</string>
+  <string name="pref_downsample_summ">Grabar una muestra antes del análisis</string>
+
+  <string name="pref_display">Monitor</string>
+
+  <string name="pref_screen">Pantalla</string>
+  <string name="pref_screen_summ">Mantener la pantalla encendida</string>
+
+  <string name="pref_zoom">Acercar en el espectro</string>
+  <string name="pref_zoom_summ">Acercar a la nota actual en la pantalla del espectro</string>
+
+  <string name="pref_multiple">Múltiple notas</string>
+  <string name="pref_multiple_summ">Muestra múltiples notas en la pantalla</string>
+
+  <string name="pref_fund">Fundamental</string>
+  <string name="pref_fund_summ">Utilizar filtro fundamental</string>
+
+  <string name="pref_filters">Filtros</string>
+  <string name="pref_filters_summ">Usa filtros de nota</string>
+
+  <string name="pref_note_filter">Filtro de nota</string>
+  <string name="pref_note_filter_summ">Configuración de filtro de nota</string>
+
+  <string name="pref_octave_filter">Filtro de octava</string>
+  <string name="pref_octave_filter_summ">Configuración de filtro de octava</string>
+
+  <string name="pref_strobe">Stroboscopio</string>
+  <string name="pref_strobe_screen">Ayustes del estroboscopio</string>
+  <string name="pref_strobe_summ">Muestra el estroboscopio en la pantalla</string>
+
+  <string name="pref_colour">Colores del estroboscopio</string>
+  <string name="pref_colour_summ">Cambiar los colores del estroboscopio</string>
+
+  <string name="pref_custom">Personalizar</string>
+  <string name="pref_custom_summ">Colores personalizados</string>
+
+  <string name="pref_reference">Referencia</string>
+  <string name="pref_reference_summ">%dHz</string>
+
+  <string name="pref_transpose">Transponer</string>
+  <string name="pref_transpose_summ">%s</string>
+
+  <string name="pref_theme">Tema</string>
+
+  <string name="pref_dark">Tema oscuro</string>
+  <string name="pref_dark_summ">Usa el tema oscuro</string>
+
+  <string name="pref_about">Sobre</string>
+  <string name="pref_about_summ">Versión de Tuner %s</string>
+
+</resources>

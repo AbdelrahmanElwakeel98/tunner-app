@@ -1,0 +1,52 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.dev.musictuner"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionName "1"
+        versionCode 1
+        buildConfigField "long", "BUILT", System.currentTimeMillis() + "L"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'IconDensities', 'ClickableViewAccessibility',
+            'CustomViewStyleable', 'ExpiringTargetSdkVersion'
+        // abortOnError false
+    }
+}
+
+
+dependencies {
+
+        implementation 'com.karumi:dexter:5.0.0'
+
+
+    }
