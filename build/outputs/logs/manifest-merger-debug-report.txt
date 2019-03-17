@@ -4,7 +4,10 @@ ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.databinding:adapters:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\adapters-3.2.1.aar\a14e4401975f87cfc50625c2facd22c0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\library-3.2.1.aar\42d40237a7fb2b6947c30e353a678f30\AndroidManifest.xml:17:1-24:12
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:17:1-32:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\1bf67ae75233ab6399678b1e7615b4c7\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a3fd0c094adc46352d67642a42572cc9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\318b636186212dade3b4b32a63a33efc\AndroidManifest.xml:17:1-22:12
@@ -17,10 +20,10 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\abdel\
 MERGED from [com.android.support:transition:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f78c827060173c3a382c7c15f41cddf2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9d116c1eedfb4ad1de94f666cf2b6f6a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:2:1-38:12
@@ -56,56 +59,76 @@ uses-permission#android.permission.RECORD_AUDIO
 ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:10:5-71
 	android:name
 		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:10:22-68
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:11:22-76
 application
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:12:5-36:19
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:13:5-36:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:26:5-30:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\1bf67ae75233ab6399678b1e7615b4c7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\1bf67ae75233ab6399678b1e7615b4c7\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:17:9-41
 	tools:ignore
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:14:9-45
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:16:9-45
 	android:allowBackup
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:18:9-40
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:14:9-39
 activity#org.billthefarmer.tuner.MainActivity
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:18:9-22:20
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:20:9-22:48
 	android:label
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:19:13-64
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:21:13-41
 activity#org.billthefarmer.tuner.HelpActivity
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:9-72
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:9-50
 	android:name
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:19-70
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:23:19-47
 activity#org.billthefarmer.tuner.SplashScreen
 ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:24:9-32:20
 	android:theme
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:25:13-63
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:26:13-63
 	android:name
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:24:19-70
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:28:13-31:29
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
 ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:30:17-77
 	android:name
 		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:30:27-74
 activity#org.billthefarmer.tuner.SettingsActivity
-ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:9-35:20
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:9-54
 	android:name
-		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:19-74
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:33:19-51
+activity#org.billthefarmer.tuner.client.ClientActivity
+ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:34:9-106
+	android:theme
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:34:57-94
+	android:name
+		ADDED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml:34:19-56
 uses-sdk
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\adapters-3.2.1.aar\a14e4401975f87cfc50625c2facd22c0\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\adapters-3.2.1.aar\a14e4401975f87cfc50625c2facd22c0\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\library-3.2.1.aar\42d40237a7fb2b6947c30e353a678f30\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.2.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\library-3.2.1.aar\42d40237a7fb2b6947c30e353a678f30\AndroidManifest.xml:22:5-44
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\dexter-5.0.0.aar\48949080b842c8f61b93a892c8e1febd\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\1bf67ae75233ab6399678b1e7615b4c7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\1bf67ae75233ab6399678b1e7615b4c7\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\9ae5bc282a03138d9b984a4f50a28d1f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a3fd0c094adc46352d67642a42572cc9\AndroidManifest.xml:20:5-44
@@ -130,14 +153,14 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gr
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9d116c1eedfb4ad1de94f666cf2b6f6a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\6ae4118b406efd8864858845d8eb740e\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\452481c59018a7e88d40d2b3d56cf13b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3641c674bf05b4dd2bfa4ae5376de9d4\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\20a7ed282c6fe26c8010db16c30cf5b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\abdel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\c95914139d2e09856a8f8b58b922c5b4\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
 INJECTED from C:\Users\abdel\Desktop\tunner-master\src\main\AndroidManifest.xml
 	android:targetSdkVersion

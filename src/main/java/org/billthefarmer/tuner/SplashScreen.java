@@ -6,22 +6,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Toast;
 
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.PermissionRequestErrorListener;
-import com.karumi.dexter.listener.single.DialogOnDeniedPermissionListener;
 import com.karumi.dexter.listener.single.PermissionListener;
-import com.karumi.dexter.listener.single.SnackbarOnDeniedPermissionListener;
+
+import org.billthefarmer.tuner.client.ClientActivity;
 
 public class SplashScreen extends AppCompatActivity {
     private PermissionListener cameraPermissionListener;
@@ -59,6 +53,8 @@ public class SplashScreen extends AppCompatActivity {
                         .withErrorListener(errorListener)
                         .onSameThread()
                         .check();
+             // startActivity(new Intent(SplashScreen.this, MainActivityClient.class));
+             // finish();
             }
         }).start();
         /*
@@ -117,7 +113,7 @@ public class SplashScreen extends AppCompatActivity {
     }
 
     public void showPermissionGranted(String permission) {
-        startActivity(new Intent(SplashScreen.this, MainActivity.class));
+        startActivity(new Intent(SplashScreen.this, ClientActivity.class));
         finish();
     }
 

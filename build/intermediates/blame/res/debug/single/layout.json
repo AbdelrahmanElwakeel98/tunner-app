@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\abdel\\Desktop\\tunner-master\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_client.xml",
+        "source": "C:\\Users\\abdel\\Desktop\\tunner-master\\src\\main\\res\\layout\\activity_client.xml"
+    },
+    {
+        "merged": "C:\\Users\\abdel\\Desktop\\tunner-master\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main_client.xml",
+        "source": "C:\\Users\\abdel\\Desktop\\tunner-master\\src\\main\\res\\layout\\activity_main_client.xml"
+    },
+    {
+        "merged": "C:\\Users\\abdel\\Desktop\\tunner-master\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_gatt_server.xml",
+        "source": "C:\\Users\\abdel\\Desktop\\tunner-master\\src\\main\\res\\layout\\view_gatt_server.xml"
+    },
+    {
+        "merged": "C:\\Users\\abdel\\Desktop\\tunner-master\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_log.xml",
+        "source": "C:\\Users\\abdel\\Desktop\\tunner-master\\src\\main\\res\\layout\\view_log.xml"
+    }
+]

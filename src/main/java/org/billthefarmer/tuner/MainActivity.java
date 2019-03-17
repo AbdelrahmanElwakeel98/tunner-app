@@ -23,28 +23,19 @@
 
 package org.billthefarmer.tuner;
 
-import android.Manifest;
-import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
-import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothManager;
-import android.bluetooth.BluetoothProfile;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
-import android.bluetooth.le.ScanFilter;
-import android.bluetooth.le.ScanResult;
-import android.bluetooth.le.ScanSettings;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -55,7 +46,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.ParcelUuid;
 import android.preference.PreferenceManager;
 import android.support.annotation.RequiresApi;
 import android.util.Log;
@@ -70,14 +60,10 @@ import android.widget.Toast;
 
 import org.json.JSONArray;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -86,9 +72,6 @@ import java.util.concurrent.Executors;
 
 import util.BluetoothUtils;
 import util.StringUtils;
-
-import static org.billthefarmer.tuner.Constants.SCAN_PERIOD;
-import static org.billthefarmer.tuner.Constants.SERVICE_UUID;
 
 // Main Activity
 public class MainActivity extends Activity implements View.OnClickListener, View.OnLongClickListener, Test
@@ -136,6 +119,8 @@ public class MainActivity extends Activity implements View.OnClickListener, View
     private BluetoothLeScanner mBluetoothLeScanner;
     private ScanCallback mScanCallback;
     private BluetoothGatt mGatt;
+
+    // private GlobalVariable globalVariable;
 
     Handler handler = new Handler(Looper.myLooper());
 
@@ -244,11 +229,9 @@ public class MainActivity extends Activity implements View.OnClickListener, View
 
         if (dark) setTheme(R.style.AppDarkTheme);
 
-        BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(BLUETOOTH_SERVICE);
-        mBluetoothAdapter = bluetoothManager.getAdapter();
-
         t = this;
         setContentView(R.layout.activity_main);
+
 
         // Find the views, not all may be present
         spectrum = findViewById(R.id.spectrum);
@@ -289,120 +272,23 @@ public class MainActivity extends Activity implements View.OnClickListener, View
         // Set up the click listeners
         setClickListeners();
 
-        startScan();
-
-    }
-
-
-
-    //Start scanning for BLE devices
-    @TargetApi(Build.VERSION_CODES.M)
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void startScan() {
-        if (!hasPermissions() || mScanning) {
-            return;
-        }
-        disconnectGattServer();
-
-        mScanResults = new HashMap<>();
-        mScanCallback = new BtleScanCallback(mScanResults);
-
-        mBluetoothLeScanner = mBluetoothAdapter.getBluetoothLeScanner();
-
-        // Note: Filtering does not work the same (or at all) on most devices. It also is unable to
-        // search for a mask or anything less than a full UUID.
-        // Unless the full UUID of the server is known, manual filtering may be necessary.
-        ScanFilter scanFilter = new ScanFilter.Builder()
-                .setServiceUuid(new ParcelUuid(SERVICE_UUID))
-                .build();
-        List<ScanFilter> filters = new ArrayList<>();
-        filters.add(scanFilter);
-
-        ScanSettings settings = new ScanSettings.Builder()
-                .setScanMode(ScanSettings.SCAN_MODE_LOW_POWER)
-                .build();
-
-        mBluetoothLeScanner.startScan(filters, settings, mScanCallback);
-
-        mHandler = new Handler();
-        mHandler.postDelayed(this::stopScan, SCAN_PERIOD);
-
-        mScanning = true;
-    }
-
-    //Stop scanning
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void stopScan() {
-        if (mScanning && mBluetoothAdapter != null && mBluetoothAdapter.isEnabled() && mBluetoothLeScanner != null) {
-            mBluetoothLeScanner.stopScan(mScanCallback);
-            scanComplete();
-        }
-
-        mScanCallback = null;
-        mScanning = false;
-        mHandler = null;
-    }
-
-    //Ensuring devices that had been detected
-    private void scanComplete() {
-        if (mScanResults.isEmpty()) {
-            return;
-        }
-        for (String deviceAddress : mScanResults.keySet()) {
-            BluetoothDevice device = mScanResults.get(deviceAddress);
-            Log.d(TAG, "Found device: " + deviceAddress);
-            connectDevice(device);
-        }
-    }
-
-    //Existing of permission
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    private boolean hasPermissions() {
-        if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
-            requestBluetoothEnable();
-            return false;
-        } else if (!hasLocationPermissions()) {
-            requestLocationPermission();
-            return false;
-        }
-        return true;
-    }
-
-    //Check bluetooth status
-    private void requestBluetoothEnable() {
-        Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-        startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
-        Log.d(TAG, "Requested user enables Bluetooth. Try starting the scan again.");
-    }
-
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    private boolean hasLocationPermissions() {
-        return checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
-    }
-
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    private void requestLocationPermission() {
-        requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_FINE_LOCATION);
-    }
-
-    // Gatt connection
-
-    private void connectDevice(BluetoothDevice device) {
-        GattClientCallback gattClientCallback = new GattClientCallback();
-        mGatt = device.connectGatt(this, false, gattClientCallback);
+        mConnected = ((GlobalVariable)this.getApplicationContext()).getConnected();
+        mGatt = ((GlobalVariable)this.getApplicationContext()).getGatt();
+        mEchoInitialized = ((GlobalVariable)this.getApplicationContext()).getEchoInitialized();
     }
 
     // Messaging
 
     private void sendMessage(double cents) {
+
         if (!mConnected || !mEchoInitialized) {
+
             return;
         }
 
         BluetoothGattCharacteristic characteristic = BluetoothUtils.findEchoCharacteristic(mGatt);
         if (characteristic == null) {
+            Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_LONG).show();
             disconnectGattServer();
             return;
         }
@@ -417,18 +303,9 @@ public class MainActivity extends Activity implements View.OnClickListener, View
         characteristic.setValue(messageBytes);
         boolean success = mGatt.writeCharacteristic(characteristic);
         if (success) {
+
         } else {
         }
-    }
-
-    // Gat Client Actions
-
-    public void setConnected(boolean connected) {
-        mConnected = connected;
-    }
-
-    public void initializeEcho() {
-        mEchoInitialized = true;
     }
 
     public void disconnectGattServer() {
@@ -437,146 +314,6 @@ public class MainActivity extends Activity implements View.OnClickListener, View
         if (mGatt != null) {
             mGatt.disconnect();
             mGatt.close();
-        }
-    }
-
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private class BtleScanCallback extends ScanCallback {
-
-        private Map<String, BluetoothDevice> mScanResults;
-
-        BtleScanCallback(Map<String, BluetoothDevice> scanResults) {
-            mScanResults = scanResults;
-        }
-
-        @Override
-        public void onScanResult(int callbackType, ScanResult result) {
-            addScanResult(result);
-        }
-
-        @Override
-        public void onBatchScanResults(List<ScanResult> results) {
-            for (ScanResult result : results) {
-                addScanResult(result);
-            }
-        }
-
-        @Override
-        public void onScanFailed(int errorCode) {
-        }
-
-        private void addScanResult(ScanResult result) {
-            BluetoothDevice device = result.getDevice();
-            String deviceAddress = device.getAddress();
-            mScanResults.put(deviceAddress, device);
-        }
-    }
-
-    private class GattClientCallback extends BluetoothGattCallback {
-
-        @Override
-        public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
-            super.onConnectionStateChange(gatt, status, newState);
-            // log("onConnectionStateChange newState: " + newState);
-
-            if (status == BluetoothGatt.GATT_FAILURE) {
-                //  logError("Connection Gatt failure status " + status);
-                disconnectGattServer();
-                return;
-            } else if (status != BluetoothGatt.GATT_SUCCESS) {
-                // handle anything not SUCCESS as failure
-                //  logError("Connection not GATT sucess status " + status);
-                disconnectGattServer();
-                return;
-            }
-
-            if (newState == BluetoothProfile.STATE_CONNECTED) {
-                // log("Connected to device " + gatt.getDevice().getAddress());
-                setConnected(true);
-                gatt.discoverServices();
-            } else if (newState == BluetoothProfile.STATE_DISCONNECTED) {
-                // log("Disconnected from device");
-                disconnectGattServer();
-            }
-        }
-
-        @Override
-        public void onServicesDiscovered(BluetoothGatt gatt, int status) {
-            super.onServicesDiscovered(gatt, status);
-
-            if (status != BluetoothGatt.GATT_SUCCESS) {
-                //  log("Device service discovery unsuccessful, status " + status);
-                return;
-            }
-
-            List<BluetoothGattCharacteristic> matchingCharacteristics = BluetoothUtils.findCharacteristics(gatt);
-            if (matchingCharacteristics.isEmpty()) {
-                // logError("Unable to find characteristics.");
-                return;
-            }
-
-            // log("Initializing: setting write type and enabling notification");
-            for (BluetoothGattCharacteristic characteristic : matchingCharacteristics) {
-                characteristic.setWriteType(BluetoothGattCharacteristic.WRITE_TYPE_DEFAULT);
-                enableCharacteristicNotification(gatt, characteristic);
-            }
-        }
-
-        @Override
-        public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-            super.onCharacteristicWrite(gatt, characteristic, status);
-            if (status == BluetoothGatt.GATT_SUCCESS) {
-                // log("Characteristic written successfully");
-            } else {
-                //  logError("Characteristic write unsuccessful, status: " + status);
-                disconnectGattServer();
-            }
-        }
-
-        @Override
-        public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
-            super.onCharacteristicRead(gatt, characteristic, status);
-            if (status == BluetoothGatt.GATT_SUCCESS) {
-                // log("Characteristic read successfully");
-                readCharacteristic(characteristic);
-            } else {
-                /// logError("Characteristic read unsuccessful, status: " + status);
-                // Trying to read from the Time Characteristic? It doesnt have the property or permissions
-                // set to allow this. Normally this would be an error and you would want to:
-                // disconnectGattServer();
-            }
-        }
-
-        @Override
-        public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-            super.onCharacteristicChanged(gatt, characteristic);
-            // log("Characteristic changed, " + characteristic.getUuid().toString());
-            readCharacteristic(characteristic);
-        }
-
-        private void enableCharacteristicNotification(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
-            boolean characteristicWriteSuccess = gatt.setCharacteristicNotification(characteristic, true);
-            if (characteristicWriteSuccess) {
-                //  log("Characteristic notification set successfully for " + characteristic.getUuid().toString());
-                if (BluetoothUtils.isEchoCharacteristic(characteristic)) {
-                    initializeEcho();
-                }
-            } else {
-                //  logError("Characteristic notification set failure for " + characteristic.getUuid().toString());
-            }
-        }
-
-        private void readCharacteristic(BluetoothGattCharacteristic characteristic) {
-            byte[] messageBytes = characteristic.getValue();
-            // log("Read: " + StringUtils.byteArrayInHexFormat(messageBytes));
-            String message = StringUtils.stringFromBytes(messageBytes);
-            if (message == null) {
-                // logError("Unable to convert bytes to string");
-                return;
-            }
-
-            //  log("Received message: " + message);
         }
     }
 
@@ -1558,11 +1295,6 @@ public class MainActivity extends Activity implements View.OnClickListener, View
                         if (display != null) display.postInvalidate();
 
                        sendMessage(cents);
-                     /*   MainActivity.this.runOnUiThread(new Runnable() {
-                            public void run() {
-                                Toast.makeText(MainActivity.this, "Toast Message Text!", Toast.LENGTH_LONG).show();
-                            }
-                        }); */
                     }
 
                     // Reset count;
@@ -1823,6 +1555,14 @@ public class MainActivity extends Activity implements View.OnClickListener, View
 // Reset mediaplayer
         mp.reset();
 
+    }
+
+    // Not be testing yet
+    public void onBackPressed() {
+        Intent startMain = new Intent(Intent.ACTION_MAIN);
+        startMain.addCategory(Intent.CATEGORY_HOME);
+        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(startMain);
     }
 
 }
