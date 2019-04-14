@@ -830,12 +830,14 @@ drawable ic_action_settings
 drawable ic_action_sort_by_size
 drawable ic_action_sort_by_size_dark
 drawable ic_launcher
+drawable ic_more_vert_black_24dp
 drawable ic_pref_blue
 drawable ic_pref_magenta
 drawable ic_pref_olive
 drawable ic_pref_spectrum
 drawable ic_pref_strobe
 drawable ic_pref_strobe_dark
+drawable link
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -903,6 +905,7 @@ id client_device_info_text_view
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id connect
 id connect_gatt_server_button
 id container
 id contentPanel

@@ -2,97 +2,59 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="24"
-    build-mode="FULL"
+    build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="FIELD_TYPE_CHANGE"
     plugin-version="3.2.1"
-    timestamp="1552866119804"
+    timestamp="1555282628812"
     token="1914103887385152081"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3576" />
+        duration="2926" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="176" />
+        duration="18" />
     <task
         name="verifier"
-        duration="315" />
+        duration="6" />
 
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
     <artifact
         location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\instant-run-apk\debug\tunner-master-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1552866119804"
+        timestamp="1555282494289"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -100,6 +62,21 @@
         <artifact
             location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\instant-run-apk\debug\tunner-master-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1555282628812"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\abdel\Desktop\tunner-master\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

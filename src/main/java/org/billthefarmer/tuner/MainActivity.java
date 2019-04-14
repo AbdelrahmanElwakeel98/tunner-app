@@ -58,6 +58,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import org.billthefarmer.tuner.client.ClientActivity;
 import org.json.JSONArray;
 
 import java.io.IOException;
@@ -495,9 +496,21 @@ public class MainActivity extends Activity implements View.OnClickListener, View
             case R.id.settings:
                 return onSettingsClick(item);
 
+            case R.id.connect:
+                return onConnectionClick(item);
+
             default:
                 return false;
         }
+    }
+
+    // On Connection click
+    private boolean onConnectionClick(MenuItem item)
+    {
+        Intent intent = new Intent(this, ClientActivity.class);
+        startActivity(intent);
+
+        return true;
     }
 
     // On help click

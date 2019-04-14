@@ -11,5 +11,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1";
   // Fields from default config.
-  public static final long BUILT = 1552866119800L;
+  public static final long BUILT = 1555282628804L;
 }

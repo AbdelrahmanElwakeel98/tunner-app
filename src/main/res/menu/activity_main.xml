@@ -14,4 +14,10 @@
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
 
+    <item
+        android:id="@+id/connect"
+        android:icon="@drawable/link"
+        android:title="Connect"
+        app:showAsAction="ifRoom" />
+
 </menu>

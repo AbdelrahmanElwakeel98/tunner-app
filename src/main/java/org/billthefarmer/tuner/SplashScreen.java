@@ -113,7 +113,7 @@ public class SplashScreen extends AppCompatActivity {
     }
 
     public void showPermissionGranted(String permission) {
-        startActivity(new Intent(SplashScreen.this, ClientActivity.class));
+        startActivity(new Intent(SplashScreen.this, MainActivity.class));
         finish();
     }
 
